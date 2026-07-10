@@ -10,7 +10,7 @@ st.title("🔍 YOLOv8 실시간 이미지 탐지 서버")
 st.write("학습된 모델을 활용해 이미지 내 물체를 탐지합니다.")
 
 # 모델 경로는 고정되어 있다고 가정합니다.
-MODEL_PATH = Path("runs/detect/train/weights/best.pt")
+MODEL_PATH = Path("weights/best.pt")
 
 @st.cache_resource # 모델을 한 번만 로드하도록 캐싱 (속도 향상)
 def load_yolo_model(path):
