@@ -14,7 +14,7 @@ st.title("🛠️ YOLOv8 X Gemini AI 품질 검사 및 자동 해석 시스템")
 st.write("이미지를 업로드하면 YOLOv8이 불량을 탐지하고, Gemini가 검사 리포트를 생성합니다.")
 
 # 모델 경로 설정
-MODEL_PATH = Path("runs/detect/train/weights/best.pt")
+MODEL_PATH = Path("weights/best.pt")
 
 @st.cache_resource
 def load_yolo_model(path):
